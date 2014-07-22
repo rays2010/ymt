@@ -1,0 +1,276 @@
+@import 'reset';
+@import 'base';
+@import 'normalize';
+@import 'vars';
+
+.list-h{
+    overflow: hidden;
+    li{
+        float: left;
+    }
+}
+
+// 样式
+.shadow-normal{
+    box-shadow: 1px 1px 3px 0 #ccc;
+}
+
+// 链接
+a:link,
+a:visited{
+    color: $color-black;
+    text-decoration: none;
+}
+
+a:hover,
+a:active{
+    color: $color-main;
+    text-decoration: none;
+}
+
+// 结构
+
+body,html{
+    font-size: $font-small;
+    background: #dcdcdc;
+}
+
+.wrap{
+    width: $length-body-width;
+    margin: 0 auto;
+    // border: 1px solid;
+}
+
+header{
+    width: 100%;
+    height: 40px;
+    background: $color-light-gray;
+    box-shadow: 1px 1px 3px 0 #ccc;
+
+    .wrap{
+        overflow: hidden;
+    }
+
+    #logo{
+        float: left;
+        width: 80px;
+        height: 40px;
+        line-height: 40px;
+        font-size: $font-biger;
+    }
+
+    #nav{
+        float: left;
+
+        li a{
+            font-size: $font-normal;
+            display: block;
+            width: 80px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border-left: 1px solid #ccc;
+            // border-right: 1px solid #fff;
+            box-shadow: 2px 0 #fff;
+        }
+
+        li:last-child a{
+            border-right: 1px solid #CBCBCB;
+            box-shadow: 2px 0 #fff;
+        }
+
+        li.select a{
+            color: $color-main;
+            background: $color-white;
+        }
+
+        li a:hover{
+            color: $color-main;
+            background: $color-white;
+        }
+    }
+
+    #search{
+        float: left;
+        margin: 5px 0 0 5px;
+
+        .searchWord{
+            padding: 5px;
+            width: 200px;
+            height: 18px;
+            border: 1px solid $color-gray;
+            border-radius: 2px;
+        }
+
+        .searchBtn{
+            color: $color-white;
+            height: 27px;
+            width: 37px;
+            border: none;
+            background: $color-deep-gray;
+            border-radius: 2px;
+        }
+    }
+        
+    #user{
+        float: right;
+
+        a{
+            display: inline-block;
+            width: 50px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+        }
+    }
+
+}
+
+#main{
+    width: $length-body-width - 60px;
+    background: #fff;
+    margin: 10px auto;
+    box-shadow: 1px 1px 3px 0 #ccc;
+    border-radius: 3px;
+    padding: 30px;
+}
+
+.pic{
+    float: left;
+    margin: 0 37px 37px 0;
+
+    .thumb{
+        width: 285px;
+        height: 235px;
+    }
+}
+
+.side{
+    height: 800px;
+    float: right;
+    width: 290px - 20px;
+    padding: 10px;
+
+    .cell{
+        margin: 0 0 10px;
+    }
+
+    .hots{
+        h2{
+            margin: 10px 0;
+        }
+        a{
+            padding: 5px;
+            background: $color-light-gray;
+            border-radius: 2px;
+            display: inline-block;
+            margin: 0 5px 5px 0;
+        }
+        a:hover{
+            background: $color-main;
+            color: $color-white;
+        }
+    }
+    
+    .ads{
+        background: $color-light-gray;
+        padding: 5px;
+
+        a{
+            display: block;
+            margin: 0 0 5px;
+        }
+
+        img{
+            width: 258px;
+            height: 102px;
+        }
+    }
+}
+
+#pagination{
+    
+    width: 620px;
+    margin: 0 auto 40px;
+
+    .main{
+        float: left;
+        a{
+            display: inline-block;
+            width: 40px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            border: 1px solid $color-gray;
+            background: $color-lighter-gray;
+            border-radius: 1px;
+        }
+        a.select,
+        a:hover{
+             background: $color-main;
+             color: $color-white;
+             border: 1px solid $color-main;
+        }
+        .dot{
+            display: inline-block;
+            width: 40px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+        }
+    }
+
+    .goto{
+        float: left;
+        height: 30px;
+        line-height: 30px;
+
+        .num,
+        .confirm{
+            width: 50px;
+            margin: 0 0 0 5px;
+            border: 1px solid $color-gray;
+            background: $color-white;
+            height: 16px;
+            padding: 4px;
+            text-align: center;
+        }
+
+        .confirm{
+            background: $color-deeper-gray;
+            border: 1px solid $color-deeper-gray;
+            color: $color-white;
+            margin: 0 5px 0 0;
+            height: 26px;
+        }
+
+    }
+}
+
+
+footer{
+    width: 100%;
+    margin: 50px 0;
+
+    #links,
+    #friends{
+        width: 630px;
+        margin: 0 auto 10px;
+        a{
+            color: $color-deeper-gray;
+        }
+        a:hover{
+            color: $color-main;
+        }
+        li{
+            margin: 0 0 0 1em;
+        }
+        li.select a{
+            color: $color-main;
+        }
+        
+    }
+
+}
+
+@import 'upload';

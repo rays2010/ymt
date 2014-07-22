@@ -1,0 +1,1 @@
+define(["jquery","jquery.uploadify"],function(e){e(document).ready(function(){e("#file_upload").uploadify({height:30,buttonClass:"btn-upload",buttonText:"点击上传图片",buttonCursor:"hand",swf:"/js/lib/uploadify.swf",uploader:"/uploadify.php",width:150,onUploadSuccess:function(e,t,n){console.log("The file "+e.name+" finished processing."),console.log(t),console.log(n)}})})});

@@ -1,0 +1,122 @@
+@import 'vars';
+@import 'uploadify';
+
+#block-upload{
+	width: $length-body-width - 100px;
+	padding: 50px;
+	background: $color-white;
+	margin: 4em 0;
+
+	.btn-finish,
+	.btn-upload{
+		display: block;
+		width: 140px;
+		height: 40px;
+		line-height: 40px;
+		text-align: center;
+		border-radius: 3px;
+		background: green;
+		color: $color-white;
+	}
+	.btn-upload{
+		background: $color-deeper-gray;
+	}
+
+	.list{
+		padding: 20px;
+		background: $color-gray;
+
+		ul{
+			overflow: hidden;
+		}
+
+		.item{
+			float: left;
+			width: 170px;
+			padding: 10px;
+			margin: 10px;
+			background: $color-white;
+
+			.thumb{
+				width: 100%;
+			}
+
+			.desc{
+				width: 98%;
+			}
+		}
+	}
+
+	.album{
+		padding: 20px;
+		background: $color-gray;
+	
+		.nav{
+			li{
+				margin: 0 1em 0 0;
+			}
+			li.select a{
+				color: green;
+				cursor: default;
+			}
+		}
+
+		.list{
+			padding: 0;
+			ul{
+				margin: 10px 0;
+			}
+			li{
+				float: left;
+				width: 140px;
+				height: 50px;
+				padding: 5px;
+				border: 1px solid $color-gray;
+				background: $color-white;
+				margin: 0 5px 5px 0;
+
+				.thumb{
+					display: inline-block;
+					width: 50px;
+					height: 50px;
+					float: left;
+					margin: 0 5px 0 0;
+				}
+
+				.title{
+					line-height: 1em;
+					padding: 0;	
+				}
+
+			}
+		}
+
+		.create{
+			margin: 10px 0;
+			.album_name,
+			.album_desc{
+				width: 300px;
+				height: 30px;
+				border: 1px solid $color-deep-gray;
+				padding: 5px;
+				display: block;
+				resize:none;
+				margin: 0 0 10px 0;
+			}
+			.album_desc{
+				height: 100px;
+			}
+			.album_create{
+				display: block;
+				width: 100px;
+				height: 25px;
+				line-height: 25px;
+				text-align: center;
+				border-radius: 3px;
+				background: #339966;
+				color: $color-white;
+			}
+		}
+
+	}
+}

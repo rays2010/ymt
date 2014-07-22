@@ -1,0 +1,1 @@
+define(["jquery","jquery.localscroll","jquery.parallax","jquery.scrollTo"],function(e){e(document).ready(function(){e("#nav").localScroll(800),e("#intro").parallax("50%",.1),e("#second").parallax("50%",.1),e(".bg").parallax("50%",.4),e("#third").parallax("50%",.3)})});
